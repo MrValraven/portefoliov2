@@ -1,0 +1,230 @@
+$whiteBlue: #e7ecef;
+$darkBlue: #274c77;
+$normalBlue: #6aa7cf;
+$lightBlue: #a3cef1;
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 100px;
+  width: 100%;
+  .cta {
+    width: 35%;
+  }
+  #video {
+    border-radius: 12px;
+    width: 100%;
+    background-color: white;
+  }
+  .content {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    background-color: white;
+    padding: 25px 50px 50px 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 0 0 12px 12px;
+  }
+  h1 {
+    font-size: 60px;
+    font-weight: 500;
+    background-color: white;
+    padding-left: 50px;
+    padding-top: 25px;
+    border-radius: 12px 12px 0 0;
+    opacity: 1;
+  }
+  h3 {
+    margin-top: -10px;
+    padding-bottom: 10px;
+    background-color: white;
+    filter: grayscale(0%);
+    padding-left: 55px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 0 0;
+    width: 45%;
+    label {
+      color: $darkBlue;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+    input {
+      padding: 10px;
+      margin-bottom: 25px;
+      border-radius: 12px;
+      border: none;
+      outline: none;
+      background-color: $whiteBlue;
+      color: $darkBlue;
+    }
+    textarea {
+      resize: none;
+      height: 100px;
+      padding: 10px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      border: none;
+      outline: none;
+      background-color: $whiteBlue;
+      color: $darkBlue;
+    }
+    .contactButton {
+      margin-top: 23px;
+    }
+  }
+  .socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+    height: 400px;
+    a {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      opacity: 1;
+      transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+      &:hover {
+        transform: translateY(-2px);
+        i {
+          color: darken($color: $normalBlue, $amount: 15%);
+        }
+      }
+      i {
+        font-size: 40px;
+        padding: 5px;
+        color: $darkBlue;
+        transition: color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+      #github {
+        padding-left: 2px;
+      }
+    }
+    .linkedIn {
+      margin: 30px 0 30px 0;
+    }
+    .github {
+      margin: 10px 0 0px 0;
+    }
+  }
+  .notification {
+    position: fixed;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    top: 20px;
+    right: 0px;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 20px;
+    background-color: $darkBlue;
+    color: $whiteBlue;
+    animation: slideIn 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+    z-index: 999;
+    p {
+      padding: 0 5px 0 5px;
+    }
+    i {
+      padding: 5px;
+      cursor: pointer;
+    }
+  }
+  @keyframes slideIn {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+}
+
+@media (max-width: 1680px) {
+  .contacts {
+    .cta {
+      width: 40%;
+    }
+    .socials {
+      justify-content: space-evenly;
+      .github {
+        margin: 0px 0 0px 0;
+      }
+    }
+    form {
+      input {
+        margin-bottom: 15px;
+      }
+      .contactButton {
+        margin-top: 0px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .contacts {
+    h1 {
+      line-height: 70px;
+      padding-bottom: 30px;
+    }
+    .content {
+      flex-direction: column;
+      .cta {
+        width: 100%;
+        video {
+          width: 80%;
+        }
+      }
+      .socials {
+        width: 100%;
+        flex-direction: row;
+      }
+      form {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .contacts {
+    padding-bottom: 70px;
+    padding-top: 70px;
+    h1 {
+      font-size: 36px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    h3 {
+      margin: 0;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-weight: 300;
+      font-size: 18px;
+    }
+    .content {
+      padding: 20px;
+
+      .socials {
+        flex-wrap: wrap;
+        justify-content: center;
+        a {
+          width: 50%;
+        }
+        .linkedIn {
+          margin: 0;
+        }
+        .discord {
+          margin-top: -100px;
+        }
+      }
+    }
+  }
+}

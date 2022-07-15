@@ -1,0 +1,108 @@
+$whiteBlue: #e7ecef;
+$darkBlue: #274c77;
+$normalBlue: #6aa7cf;
+$lightBlue: #a3cef1;
+$editorBlue: #21313c;
+$easing: cubic-bezier(0.39, 1.61, 0.89, 1.22);
+$fastEasing: cubic-bezier(0.075, 0.82, 0.165, 1);
+$delay: 0.5s;
+
+.toolsetContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px 15px;
+  margin-top: 30px;
+  li {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100px;
+    padding: 15px 10px 15px 10px;
+
+    color: $whiteBlue;
+    transform: scale(0);
+    img {
+      width: 50px;
+      height: 50px;
+      opacity: 0.8;
+    }
+    i {
+      font-size: 50px;
+      margin-right: 0;
+      opacity: 0.8;
+    }
+    p {
+      opacity: 0;
+      transform: translateY(5px);
+      transition: opacity 0.2s cubic-bezier(0.075, 0.82, 0.165, 1),
+        transform 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    &:hover {
+      transform: scale(1);
+      p {
+        opacity: 1;
+        transform: translateY(-1px);
+      }
+      img {
+        opacity: 1;
+      }
+      i {
+        opacity: 1;
+      }
+    }
+  }
+  i {
+    font-size: 60px;
+    margin-right: 30px;
+  }
+  .html {
+    animation: scaleUp $delay 1.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  }
+  .css {
+    animation: scaleUp $delay 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  }
+  .sass {
+    animation: scaleUp $delay 2.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  }
+  .javascript {
+    animation: scaleUp $delay 3s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  }
+  .typescript {
+    animation: scaleUp $delay 3.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  }
+  .vue {
+    animation: scaleUp $delay 4s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  }
+  .node {
+    animation: scaleUp $delay 4.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  }
+  .express {
+    animation: scaleUp $delay 5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  }
+  .mongodb {
+    animation: scaleUp $delay 5.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  }
+  .git {
+    animation: scaleUp 1s 6s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  }
+  .react {
+    animation: scaleUp 1s 6.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  }
+  .redux {
+    animation: scaleUp 1s 7s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  }
+  .nextjs {
+    animation: scaleUp 1s 7.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

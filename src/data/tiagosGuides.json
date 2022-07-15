@@ -1,0 +1,37 @@
+[
+  {
+    "name": "cool places",
+    "description": "A collection of amazing places I've visited during my travels. It ranges from vegetarian/vegan cafés and restaurants, to landmarks, parks to have a picnic at and LGBTQIA+ clubs to have the perfect night out",
+    "websiteURL": "https://tiagosguidetocoolplaces.vercel.app/",
+    "codeURL": "",
+    "isWIP": false
+  },
+  {
+    "name": "vegan home cooking",
+    "description": "No description available yet",
+    "websiteURL": "",
+    "codeURL": "",
+    "isWIP": true
+  },
+  {
+    "name": "Dungeons & Dragons",
+    "description": "No description available yet",
+    "websiteURL": "",
+    "codeURL": "",
+    "isWIP": true
+  },
+  {
+    "name": "knowing people",
+    "description": "No description available yet",
+    "websiteURL": "",
+    "codeURL": "",
+    "isWIP": true
+  },
+  {
+    "name": "modern dating",
+    "description": "No description available yet",
+    "websiteURL": "",
+    "codeURL": "",
+    "isWIP": true
+  }
+]

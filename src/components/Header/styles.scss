@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+$darkBlue: #274c77;
+
+header {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  opacity: 1;
+  color: #fff;
+  padding: 20px 100px 0;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      display: flex;
+      padding-top: 10px;
+
+      img {
+        margin-top: -23px;
+        width: 50px;
+      }
+
+      p {
+        font-size: 22px;
+        font-weight: bold;
+        color: #274c77;
+      }
+    }
+    ul {
+      display: flex;
+      justify-content: space-around;
+      li {
+        padding: 10px;
+        font-size: 22px;
+        a {
+          font-weight: bold;
+          font-family: monospace;
+          color: $darkBlue;
+          transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) !important;
+          &:hover {
+            opacity: 1;
+          }
+          i {
+            font-size: 30px;
+            transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+          }
+          #linkedin:hover {
+            transform: translateY(-5px);
+          }
+          #github:hover {
+            transform: translateY(-5px);
+          }
+        }
+      }
+      .sun,
+      .moon {
+        transform: translateY(-300%);
+        opacity: 0;
+        animation: dropDown 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+      }
+      @keyframes dropDown {
+        0% {
+          transform: translateY(-300%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0%);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1680px) {
+  header nav .logo svg {
+    left: 80px;
+  }
+}
