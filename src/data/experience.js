@@ -22,7 +22,7 @@ const experienceData = [
       {
         description: "Designed and developed website for ",
         company: "Seistetos",
-        workURL: "https://seisteto.uevora.pt",
+        workURL: "https://seistetos.uevora.pt",
       },
     ],
   },
