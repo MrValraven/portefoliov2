@@ -5,14 +5,13 @@ $lightBlue: #a3cef1;
 $editorBlue: #21313c;
 $fastEasing: cubic-bezier(0.075, 0.82, 0.165, 1);
 
-.hero {
+#hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
   height: 100vh;
-  padding-top: 25px;
-  padding-left: 80px;
+  padding: 0 0 0 100px;
 
   .imgContainer {
     overflow: hidden;
@@ -52,7 +51,7 @@ $fastEasing: cubic-bezier(0.075, 0.82, 0.165, 1);
     }
     h2 {
       font-size: 20px;
-      padding-left: 20px;
+
       margin-bottom: -25px;
       overflow: hidden;
       span {
@@ -64,7 +63,7 @@ $fastEasing: cubic-bezier(0.075, 0.82, 0.165, 1);
     h1 {
       display: flex;
       font-size: 120px;
-      padding-left: 20px;
+
       overflow: hidden;
       .name {
         display: block;
@@ -93,13 +92,13 @@ $fastEasing: cubic-bezier(0.075, 0.82, 0.165, 1);
       width: 96%;
       background-color: $darkBlue;
       border: 1px solid $darkBlue;
-      margin-left: 20px;
+
       margin-bottom: 20px;
     }
     p {
       width: 500px;
       font-size: 20px;
-      padding-left: 20px;
+
       overflow: hidden;
       span {
         display: block;
@@ -108,7 +107,6 @@ $fastEasing: cubic-bezier(0.075, 0.82, 0.165, 1);
       }
     }
     .buttons {
-      padding-left: 20px;
       display: flex;
       overflow: hidden;
 
@@ -140,6 +138,7 @@ $fastEasing: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 @media (max-width: 1150px) {
   .hero {
+    position: relative;
     flex-direction: column;
     padding-right: 30px;
     padding-top: 0px;

@@ -7,6 +7,10 @@ import contactVideo from "../../assets/brofist.mp4";
 const Contacts = () => {
   const [weekDayOfToday, setWeekDayOfToday] = useState("");
   const [openNotification, setOpenNotification] = useState(false);
+  const [contactName, setContactName] = useState("");
+  const [contactMessage, setContactMessage] = useState("");
+  const [contactEmail, setContactEmail] = useState("");
+  const [sendingButtonText, setSendingButtonText] = useState("Send message");
 
   const getTodaysDayOfTheWeek = () => {
     let day = new Date();
@@ -23,16 +27,57 @@ const Contacts = () => {
     setWeekDayOfToday(weekday[day.getDay()]);
   };
 
-  const copyDiscord = () => {
-    console.log("open");
+  const clearForm = () => {
+    setContactEmail("");
+    setContactName("");
+    setContactMessage("");
+  };
+
+  const copyDiscord = async () => {
+    await navigator.clipboard.writeText("Valraven#7264");
     setOpenNotification(true);
     setTimeout(() => {
       setOpenNotification(false);
     }, 7000);
   };
 
-  const handleFormSubmit = async () => {
-    console.log("submitting");
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    if (contactName === "" || contactMessage === "" || contactEmail === "") {
+      return;
+    }
+    setSendingButtonText("Sending message...");
+
+    const message = {
+      to: "akatiago@gmail.com",
+      from: "akatiago@gmail.com",
+      subject: contactName,
+      text: contactMessage,
+      html: contactMessage + " " + contactEmail,
+    };
+
+    const requestOptions = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(message),
+    };
+    fetch(
+      "https://send-personal-email-api.herokuapp.com/sendemail",
+      requestOptions
+    )
+      .then((response) => response.json())
+      .then(() => {
+        clearForm();
+        setSendingButtonText("Send message");
+      })
+      .catch((error) => {
+        console.error(error);
+        setSendingButtonText("An error has occurred");
+        setTimeout(() => {
+          clearForm();
+          setSendingButtonText("Send message");
+        }, 5000);
+      });
   };
 
   useEffect(() => {
@@ -75,12 +120,30 @@ const Contacts = () => {
         </div>
         <form onSubmit={handleFormSubmit}>
           <label htmlFor="contactName">Name</label>
-          <input type="text" required name="contactName" />
+          <input
+            type="text"
+            required
+            name="contactName"
+            value={contactName}
+            onChange={(e) => setContactName(e.target.value)}
+          />
           <label htmlFor="contactEmail">Email</label>
-          <input type="email" required name="contactEmail" />
+          <input
+            type="email"
+            required
+            name="contactEmail"
+            value={contactEmail}
+            onChange={(e) => setContactEmail(e.target.value)}
+          />
           <label htmlFor="contactMessage">Message</label>
-          <textarea type="text" required name="contactMessage" />
-          <Button className="contactButton" buttonText="Send message" />
+          <textarea
+            type="text"
+            required
+            name="contactMessage"
+            value={contactMessage}
+            onChange={(e) => setContactMessage(e.target.value)}
+          />
+          <Button className="contactButton" buttonText={sendingButtonText} />
         </form>
       </div>
       {openNotification ? (

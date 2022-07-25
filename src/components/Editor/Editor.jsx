@@ -55,7 +55,7 @@ const Editor = () => {
   }, []);
 
   return (
-    <section className="about">
+    <div className="about">
       <div className="aboutMe">
         <div className="card">
           <h1 className="title">
@@ -90,7 +90,7 @@ const Editor = () => {
           <div className="editor">
             <div className="lineNumbers">
               {lineNumbers.map((number) => (
-                <p>{number}</p>
+                <p key={number + Math.random() * 900}>{number}</p>
               ))}
             </div>
             <div className="code">
@@ -326,7 +326,7 @@ const Editor = () => {
 
         <Toolset codeEnd={codeEnd} />
       </div>
-    </section>
+    </div>
   );
 };
 

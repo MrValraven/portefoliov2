@@ -2,9 +2,10 @@ import { useState } from "react";
 import "./app.scss";
 import Contacts from "./components/Contacts/Contacts";
 import Editor from "./components/Editor/Editor";
+import Experience from "./components/Experience/Experience";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
-import TiagosGuide from "./components/TiagosGuide/TiagosGuide";
+import TiagosGuides from "./components/TiagosGuides/TiagosGuides";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <Header />
       <Hero />
       <Editor />
-      <TiagosGuide />
+      <Experience />
+      <TiagosGuides />
       <Contacts />
     </div>
   );

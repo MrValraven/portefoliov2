@@ -27,7 +27,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="hero">
+    <section id="hero">
       <div className="heroText">
         <h2>
           <span className="hiThere">

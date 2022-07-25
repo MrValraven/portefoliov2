@@ -8,6 +8,7 @@ const TiagosGuidesCard = ({
   website = "",
   codeURL = "",
 }) => {
+  console.log(website);
   return (
     <div className={`guideCard ${isWip ? "workInProgress" : null}`}>
       <div className="text">

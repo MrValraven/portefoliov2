@@ -2,12 +2,10 @@
 $darkBlue: #274c77;
 
 header {
-  position: absolute;
   z-index: 10;
   width: 100%;
   opacity: 1;
   color: #fff;
-  padding: 20px 100px 0;
   nav {
     display: flex;
     justify-content: space-between;
@@ -74,5 +72,11 @@ header {
 @media (max-width: 1680px) {
   header nav .logo svg {
     left: 80px;
+  }
+}
+
+@media (max-width: 1200px) {
+  header nav .logo p {
+    display: none;
   }
 }
