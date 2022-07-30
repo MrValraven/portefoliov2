@@ -1,17 +1,24 @@
 .guideCard {
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  padding: 20px 30px;
-  min-width: 300px;
-  max-width: 30%;
+  max-width: 80%;
   min-height: 200px;
-  margin-top: 20px;
-  margin-right: 20px;
   border-radius: 24px;
   border: 1px solid #274c77;
   box-shadow: 0 5px 5px -3px #0003, 0 8px 10px 1px #00000024,
     0 3px 14px 2px #0000001f;
+
+  img {
+    width: 50%;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+  }
+
+  .textContainer {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
   h2 {
     span {
@@ -19,11 +26,10 @@
     }
   }
   p {
-    margin: 10px 0px;
+    margin: 20px 0px;
   }
   .button-container {
     display: flex;
-    justify-content: flex-end;
 
     .website {
       font-size: 16px;

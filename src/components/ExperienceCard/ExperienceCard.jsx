@@ -18,7 +18,7 @@ const ExperienceCard = ({
       <h3>{role}</h3>
       <p>{description}</p>
       {work.map((project) => (
-        <li>
+        <li key={project.company}>
           {project.description}
           <a href={project.workURL} target="_blank" rel="noopener noreferrer">
             {project.company}

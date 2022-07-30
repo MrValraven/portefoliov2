@@ -13,6 +13,7 @@ const Experience = () => {
       <h1>Professional Experience</h1>
       {experienceData.map((work) => (
         <ExperienceCard
+          key={work.companyName}
           companyName={work.companyName}
           companyImage={work.companyImage}
           role={work.role}

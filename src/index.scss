@@ -33,8 +33,6 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  color: $darkBlue;
-  background-color: $whiteBlue;
   &::-webkit-scrollbar {
     width: 0.5rem;
   }
@@ -82,8 +80,6 @@ a {
   text-decoration: none;
   cursor: pointer;
   opacity: 0.75;
-  color: #2c3e50;
-  transition: color 0.25s ease-in-out;
 
   &:hover {
     opacity: 1;

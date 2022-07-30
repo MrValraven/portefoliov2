@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-$darkBlue: #274c77;
 
 header {
   z-index: 10;
   width: 100%;
   opacity: 1;
-  color: #fff;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   nav {
     display: flex;
     justify-content: space-between;
@@ -21,7 +20,6 @@ header {
       p {
         font-size: 22px;
         font-weight: bold;
-        color: #274c77;
       }
     }
     ul {
@@ -33,7 +31,6 @@ header {
         a {
           font-weight: bold;
           font-family: monospace;
-          color: $darkBlue;
           transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) !important;
           &:hover {
             opacity: 1;

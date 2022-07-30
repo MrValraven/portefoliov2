@@ -106,7 +106,7 @@ const Contacts = () => {
           </a>
           <a
             className="linkedIn"
-            href="https://www.linkedin.com/in/tiago-costa-b141121b1/"
+            href="https://www.linkedin.com/in/tiagoagcosta"
             target="_blank"
             rel="noopener noreferrer"
           >

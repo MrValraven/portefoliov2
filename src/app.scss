@@ -1,5 +1,13 @@
 .app {
-  section,
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  section {
+    padding: 100px 300px;
+
+    h1 {
+      font-size: 60px;
+    }
+  }
+
   header {
     padding: 20px 100px;
   }

@@ -7,6 +7,13 @@
     "isWIP": false
   },
   {
+    "name": "knowing people",
+    "description": "A collection of questions to get the conversation flowing with the goal of getting to know people on a deeper level and create better platonic and romantic relationships.",
+    "websiteURL": "https://questionr.tiagocostadev.com",
+    "codeURL": "",
+    "isWIP": false
+  },
+  {
     "name": "food sorcery",
     "description": "No description available yet",
     "websiteURL": "",
@@ -19,13 +26,6 @@
     "websiteURL": "",
     "codeURL": "",
     "isWIP": true
-  },
-  {
-    "name": "knowing people",
-    "description": "A collection of questions to get the conversation flowing with the goal of getting to know people on a deeper level and create better platonic and romantic relationships.",
-    "websiteURL": "https://questionr.tiagocostadev.com",
-    "codeURL": "",
-    "isWIP": false
   },
   {
     "name": "modern dating",
