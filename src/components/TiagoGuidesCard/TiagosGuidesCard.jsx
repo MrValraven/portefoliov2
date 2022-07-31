@@ -1,18 +1,17 @@
 import React from "react";
 import "./styles.scss";
 
-import PlaceholderImage from "../../assets/placeholder.jpg";
-
 const TiagosGuidesCard = ({
   guideName = "nothing",
   description = "No description available yet",
   isWip = false,
   website = "",
   codeURL = "",
+  image,
 }) => {
   return (
     <div className={`guideCard ${isWip ? "workInProgress" : null}`}>
-      <img src={PlaceholderImage} alt="" />
+      <img src={image} alt="" />
       <div className="textContainer">
         <div className="text">
           <h2>

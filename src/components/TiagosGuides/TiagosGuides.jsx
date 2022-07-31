@@ -2,7 +2,7 @@ import React from "react";
 import TiagosGuidesCard from "../TiagoGuidesCard/TiagosGuidesCard";
 import "./styles.scss";
 
-import tiagosGuides from "../../data/tiagosGuides.json";
+import tiagosGuides from "../../data/tiagosGuides.js";
 
 const TiagosGuide = () => {
   return (
@@ -20,6 +20,7 @@ const TiagosGuide = () => {
             guideName={guide.name}
             description={guide.description}
             website={guide.websiteURL}
+            image={guide.image}
             isWip={guide.isWIP}
           />
         ))}
