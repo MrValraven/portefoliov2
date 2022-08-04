@@ -4,6 +4,8 @@ import "./styles.scss";
 import CatLogoBlack from "../../assets/logos/catLogoBlack.svg";
 import CatLogoWhite from "../../assets/logos/catLogoWhite.svg";
 
+import CV from "../../assets/resume.pdf";
+
 const Header = ({ toggleColorScheme, style }) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   return (
@@ -20,19 +22,29 @@ const Header = ({ toggleColorScheme, style }) => {
         </div>
         <ul>
           <li>
-            <a>.experience()</a>
+            <a style={style} href="#experience">
+              .experience()
+            </a>
           </li>
           <li>
-            <a>.work()</a>
+            <a style={style} href="#experience">
+              .work()
+            </a>
           </li>
           <li>
-            <a>.about()</a>
+            <a style={style} href="#about">
+              .about()
+            </a>
           </li>
           <li>
-            <a>.contacts()</a>
+            <a style={style} href="#contacts">
+              .contacts()
+            </a>
           </li>
           <li>
-            <a>.curriculumVitae()</a>
+            <a style={style} href={CV}>
+              .curriculumVitae()
+            </a>
           </li>
           <li>
             <a
@@ -45,6 +57,7 @@ const Header = ({ toggleColorScheme, style }) => {
           </li>
           <li>
             <a
+              style={style}
               href="https://www.linkedin.com/in/tiagoagcosta"
               target="_blank"
               rel="noopener noreferrer"
@@ -60,7 +73,7 @@ const Header = ({ toggleColorScheme, style }) => {
                 setIsDarkMode(!isDarkMode);
               }}
             >
-              <a>
+              <a style={style}>
                 <i className="fas fa-sun"></i>
               </a>
             </li>
@@ -72,7 +85,7 @@ const Header = ({ toggleColorScheme, style }) => {
                 setIsDarkMode(!isDarkMode);
               }}
             >
-              <a>
+              <a style={style}>
                 <i className="fas fa-moon"></i>
               </a>
             </li>

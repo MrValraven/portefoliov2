@@ -8,17 +8,15 @@ $fastEasing: cubic-bezier(0.075, 0.82, 0.165, 1);
 #hero {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   overflow: hidden;
-  height: 100vh;
+  height: 90vh;
   padding: 0 0 0 100px;
 
   .imgContainer {
     overflow: hidden;
     position: relative;
     width: 45%;
-    height: 100vh;
-    padding-top: -100px;
+    height: 90vh;
 
     .tiagoImg {
       position: absolute;
@@ -32,11 +30,10 @@ $fastEasing: cubic-bezier(0.075, 0.82, 0.165, 1);
     }
   }
   .heroText {
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
+    padding-top: 150px;
     z-index: 2;
 
     .hiThere {

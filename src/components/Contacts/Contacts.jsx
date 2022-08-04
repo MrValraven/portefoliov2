@@ -85,7 +85,7 @@ const Contacts = () => {
   }, []);
 
   return (
-    <section className="contacts">
+    <section className="contacts" id="contacts">
       <h1>Let's create cool things together</h1>
       <h3>Stay creative and have a stunning {weekDayOfToday}!</h3>
       <div className="content">

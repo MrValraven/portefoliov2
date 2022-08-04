@@ -9,7 +9,7 @@ import ExperienceCard from "../ExperienceCard/ExperienceCard";
 
 const Experience = () => {
   return (
-    <section className="experience">
+    <section className="experience" id="experience">
       <h1>Professional Experience</h1>
       {experienceData.map((work) => (
         <ExperienceCard

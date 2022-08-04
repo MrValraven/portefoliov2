@@ -4,13 +4,7 @@ import "./styles.scss";
 import editorData from "../../data/editorData.json";
 import ReactLogo from "../../assets/logos/reactLogo.svg";
 import Toolset from "../Toolset/Toolset";
-
-const lineNumbers = [
-  121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135,
-  136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 122, 123, 124, 125,
-  126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140,
-  141, 142, 143, 144, 145, 146,
-];
+import lineNumbers from "./lineNumbers";
 
 const Editor = () => {
   const [codeEnd, setCodeEnd] = useState(false);
@@ -52,10 +46,11 @@ const Editor = () => {
 
   useEffect(() => {
     typeAllCode();
+    console.log(lineNumbers);
   }, []);
 
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="aboutMe">
         <div className="card">
           <h1 className="title">

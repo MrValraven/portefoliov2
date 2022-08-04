@@ -37,7 +37,7 @@ const GlitchyImage = () => {
             height="140%"
             filterUnits="objectBoundingBox"
             primitiveUnits="userSpaceOnUse"
-            color-interpolation-filters="linearRGB"
+            colorInterpolationFilters="linearRGB"
           >
             <feMorphology
               operator="dilate"
@@ -58,7 +58,7 @@ const GlitchyImage = () => {
             height="140%"
             filterUnits="objectBoundingBox"
             primitiveUnits="userSpaceOnUse"
-            color-interpolation-filters="linearRGB"
+            colorInterpolationFilters="linearRGB"
           >
             <feMorphology
               operator="dilate"
