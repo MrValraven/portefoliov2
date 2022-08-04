@@ -1,0 +1,100 @@
+[
+  {
+    "id": "1",
+    "title": "Kucomcu.io Smart Contract",
+    "description": "The smart contract implementation for Kucomcu.io",
+    "websiteURL": "https://ropsten.etherscan.io/address/0x655B3E27cE170F8E30010E3dfa7AA43B1E7e8B72",
+    "codeURL": "https://github.com/MrValraven/kucomcu-smart_contract"
+  },
+  {
+    "id": "2",
+    "title": "AAUE.pt Backend (WiP)",
+    "description": "Backend with User auth (JWT), MongoDB integration with user and news models",
+    "websiteURL": "https://aaue.pt/noticias",
+    "codeURL": "https://github.com/MrValraven/blog-API"
+  },
+  {
+    "id": "2.2",
+    "title": "BottleCellar.io",
+    "description": "A small project I did for a React + Redux Frontend Developer assessment test",
+    "websiteURL": "https://bottlecellar.vercel.app",
+    "codeURL": "https://github.com/MrValraven/bottlecellar"
+  },
+  {
+    "id": "2.5",
+    "title": "Crown Clothing (WiP)",
+    "description": "A fictional clothing Ecommerce, built this to learn React, React Router, Redux, Hooks, Firebase and Stripe API",
+    "websiteURL": "https://crownclothingecom.vercel.app",
+    "codeURL": "https://github.com/MrValraven/clothing-ecommerce"
+  },
+  {
+    "id": "3",
+    "title": "Web Scraper",
+    "description": "Web Scraper that gets all the housing listings from alojamento.aaue.pt",
+    "websiteURL": "https://dados-portal-alojamento.herokuapp.com/getAnuncios",
+    "codeURL": "https://github.com/MrValraven/alojamento-web-scraper"
+  },
+  {
+    "id": "4.5",
+    "title": "Sapatuna - Party Game (WiP)",
+    "description": "A LGBTQI+ friendly truth or dare game",
+    "websiteURL": "https://sapatuna.vercel.app/",
+    "codeURL": "https://github.com/MrValraven/sapatuna"
+  },
+  {
+    "id": "4",
+    "title": "NEEI.UE (WiP)",
+    "description": "A website for the University of Évora's Computer Science Club",
+    "websiteURL": "https://neei.vercel.app/",
+    "codeURL": "https://github.com/MrValraven/neei"
+  },
+  {
+    "id": "4.1",
+    "title": "Lost World (WiP)",
+    "description": "A E-commerce website for the Lost World store in Sines",
+    "websiteURL": "https://lostworldcomics.netlify.app/",
+    "codeURL": "https://github.com/MrValraven/lostworld"
+  },
+  {
+    "id": "4.5",
+    "title": "Splitter",
+    "description": "A Tip calculator app built with Vue.js. This is a challenge from Frontend Mentor.",
+    "websiteURL": "https://splitterapp.netlify.app/#/",
+    "codeURL": "https://github.com/MrValraven/spliter"
+  },
+  {
+    "id": "5",
+    "title": "Quote Generator",
+    "description": "A quote generator",
+    "websiteURL": "https://mrvalraven-quote-generator.netlify.app/",
+    "codeURL": "https://github.com/MrValraven/Quote-generator"
+  },
+  {
+    "id": "6",
+    "title": "Infinite Scroller",
+    "description": "Infinite scroller using the Unsplash API",
+    "websiteURL": "https://mrvalraven-infinite-scroller.netlify.app/",
+    "codeURL": "https://github.com/MrValraven/Infinite-Scroll"
+  },
+  {
+    "id": "7",
+    "title": "Picture-in-Picture",
+    "description": "A simple project to try out the picture-in-picture feature",
+    "websiteURL": "https://mrvalraven-pictureinpicture.netlify.app/",
+    "codeURL": "https://github.com/MrValraven/Picture-in-Picture"
+  },
+  {
+    "id": "8",
+    "title": "Reddit CLI",
+    "description": "A simple reddit CLI that opens a random post from reddit's front page",
+    "websiteURL": "",
+    "codeURL": "https://github.com/MrValraven/reddit-cli"
+  },
+  {
+    "id": "9",
+    "title": "Perspective Playground",
+    "description": "A perspective playground to test how Vue's v-model works",
+    "websiteURL": "https://perspectiveplayground.netlify.app/",
+    "codeURL": "https://github.com/MrValraven/perspective-playground"
+  }
+]

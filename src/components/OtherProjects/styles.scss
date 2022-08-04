@@ -1,0 +1,8 @@
+.app .otherProjects {
+  padding: 100px;
+  .projectsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+}
