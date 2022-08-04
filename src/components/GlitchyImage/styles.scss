@@ -1,0 +1,26 @@
+.glitchyImage {
+  height: 500px;
+  width: 400px;
+  @keyframes my-animation {
+    0% {
+      filter: none;
+    }
+    20% {
+      filter: url(#filter);
+    }
+    50% {
+      filter: url(#filter-2);
+    }
+    80% {
+      filter: url(#filter-3);
+    }
+    94% {
+      filter: none;
+    }
+  }
+
+  #my-image {
+    filter: url(#filter);
+    animation: 0.8s my-animation alternate infinite;
+  }
+}

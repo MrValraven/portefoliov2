@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./app.scss";
+import BuiltWith from "./components/BuiltWith/BuiltWith";
 import Contacts from "./components/Contacts/Contacts";
 import Editor from "./components/Editor/Editor";
 import Experience from "./components/Experience/Experience";
@@ -37,6 +38,7 @@ function App() {
       <Editor />
       <Experience />
       <TiagosGuides />
+      <BuiltWith />
       <Contacts />
     </div>
   );

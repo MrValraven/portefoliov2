@@ -1,7 +1,16 @@
+$whiteBlue: #e7ecef;
+$darkBlue: #274c77;
+$normalBlue: #6aa7cf;
+$lightBlue: #a3cef1;
+
 .experience {
   min-height: 100vh;
   h1 {
     font-size: 100px;
     margin-bottom: 50px;
+  }
+
+  a {
+    color: lighten($color: $darkBlue, $amount: 10%);
   }
 }
